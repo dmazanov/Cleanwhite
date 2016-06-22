@@ -1,0 +1,46 @@
+/* Section work */
+.section-work {
+	padding: 5rem 0 2rem;
+	text-align: center;
+}
+.work__title {
+	font-family: $font-title;
+	color: $title-color;
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-bottom: 2.7rem;
+	&:after{
+		content:'';
+		background-color:  #303030;
+		width: 240px;
+		height: 3px;
+		display: block;
+		margin: 10px auto 0;
+	}
+}
+.work__desc {
+	width: auto;
+	font-size: 1.6rem;
+	margin: 0 auto;
+	margin-bottom: 4.6rem;
+	@include tablet {
+		width: 534px;
+	}
+}
+.works__item {
+	margin-bottom: 6rem;
+}
+.works__link {
+	display: block;
+	overflow: hidden;
+}
+.works__link img {
+	-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 1s ;
+  &:hover {
+  	-webkit-filter: none;
+  filter: none;
+  }
+}
+/* End Section work */

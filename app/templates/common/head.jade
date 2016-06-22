@@ -1,0 +1,36 @@
+head
+	meta(charset="UTF-8")
+	meta(http-equiv="X-UA-Compatible", content="IE-edge")
+	meta(name="viewport" content="width=device-width")
+
+	block title
+		title Home
+
+	// SEO
+	meta(name="description", content="")
+	meta(name="keywords", content="")
+	meta(name="author", content="Denis Mazanov")
+
+	// Favicon
+	link(rel='shortcut icon', href='/favicon.ico', type="image/x-icon")
+	link(rel='icon', href='/favicon.ico', type="image/x-icon")
+
+	// build:css css/vendor.min.css
+	//- bower:css
+	link(rel='stylesheet', href='/bower/normalize.css/normalize.css')
+	//- endbower
+	// endbuild
+
+	// Fonts
+	// build:css fonts/fonts.min.css
+	link(rel="stylesheet", href="fonts/stylesheet.css")
+	// endbuild
+
+	// CSS
+	// build:css css/main.min.css
+	link(rel='stylesheet' type='text/css' href='css/main.css' media='screen, projection, print')
+	// endbuild
+
+	// build:js js/modernizr.min.js
+	script(src="/bower/modernizr/modernizr.js")
+	// endbuild

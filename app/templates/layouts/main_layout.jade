@@ -1,0 +1,15 @@
+doctype html
+html(lang="")
+	include ../common/head.jade
+	body
+		<!--[if lt IE 8]>
+		<p class="browserupgrade">Your are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		.wrapper#home
+			.main-content
+				//- Header
+				include ../common/header.jade
+
+				//- editable content
+				block content
+		include ../common/footer.jade

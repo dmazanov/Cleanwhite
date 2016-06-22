@@ -1,0 +1,11 @@
+block link
+-var menu = { 'Home' : '/#home', 'Work' : '/#work', 'Team' : '/#team', 'Contact' : '/#contact'};
+nav.nav.clearfix
+		ul.nav__list
+			each val, key in menu
+				if selected === key
+					li.nav__item.active
+						a.nav__link(href=val)= key
+				else
+					li.nav__item
+						a.nav__link(href=val)= key

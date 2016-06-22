@@ -1,0 +1,44 @@
+/* Header */
+.header {
+	width: 100%;
+	background: #ffffff;
+}
+
+.header__logo {
+	display: inline-block;
+	margin-top: 4rem;
+}
+.logo-text{
+	position: absolute;
+	text-indent: -9999px;
+}
+.nav {
+	text-align: right;
+}
+.nav__item {
+	display: inline-block;
+	margin-left: 94px;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.nav__link {
+	display: block;
+	font-size: 1.2rem;
+	font-family: 'gotham_mediumregular';
+	color: #a7a7a7;
+	padding: 4.2rem 0;
+	text-transform: uppercase;
+}
+
+.sticking {
+	z-index: 999;
+	.nav__link {
+			padding: 1.8rem 0 1.8rem;
+	}
+	.header__logo {
+		margin-top: 1.6rem;
+	}
+}
+
+/* Header end */
